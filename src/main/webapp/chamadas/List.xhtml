@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ListChamadasTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="#{bundle.ListChamadasEmpty}" rendered="#{chamadasController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{chamadasController.items.rowCount > 0}">
+                    <h:outputText value="#{chamadasController.pagination.pageFirstItem + 1}..#{chamadasController.pagination.pageLastItem + 1}/#{chamadasController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{chamadasController.previous}" value="#{bundle.Previous} #{chamadasController.pagination.pageSize}" rendered="#{chamadasController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{chamadasController.next}" value="#{bundle.Next} #{chamadasController.pagination.pageSize}" rendered="#{chamadasController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{chamadasController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListChamadasTitle_condominios}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.condominios}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListChamadasTitle_funcionarios}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.funcionarios}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListChamadasTitle_login}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.login}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListChamadasTitle_horaChamada}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.horaChamada}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListChamadasTitle_horaEnvio}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.horaEnvio}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListChamadasTitle_descricaoDefeito}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.descricaoDefeito}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListChamadasTitle_nomeSolicitante}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.nomeSolicitante}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListChamadasTitle_telSolicitante}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.telSolicitante}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListChamadasTitle_id}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{chamadasController.prepareView}" value="#{bundle.ListChamadasViewLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{chamadasController.prepareEdit}" value="#{bundle.ListChamadasEditLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{chamadasController.destroy}" value="#{bundle.ListChamadasDestroyLink}"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{chamadasController.prepareCreate}" value="#{bundle.ListChamadasCreateLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ListChamadasIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

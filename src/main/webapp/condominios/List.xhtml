@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ListCondominiosTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="#{bundle.ListCondominiosEmpty}" rendered="#{condominiosController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{condominiosController.items.rowCount > 0}">
+                    <h:outputText value="#{condominiosController.pagination.pageFirstItem + 1}..#{condominiosController.pagination.pageLastItem + 1}/#{condominiosController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{condominiosController.previous}" value="#{bundle.Previous} #{condominiosController.pagination.pageSize}" rendered="#{condominiosController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{condominiosController.next}" value="#{bundle.Next} #{condominiosController.pagination.pageSize}" rendered="#{condominiosController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{condominiosController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_nomeCondominio}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.nomeCondominio}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_endereco}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.endereco}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_contrato}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.contrato}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_qtdeElevadores}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.qtdeElevadores}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_marcaElevadores}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.marcaElevadores}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_qtdeAndares}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.qtdeAndares}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_qtdeBlocos}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.qtdeBlocos}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_nomeSindico}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.nomeSindico}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_telSindico}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.telSindico}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_emailSindico}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.emailSindico}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_nomeSubSindico}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.nomeSubSindico}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_telSubSindico}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.telSubSindico}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_emailSubSindico}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.emailSubSindico}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_imobiliaria}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.imobiliaria}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_telImob}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.telImob}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_emailImob}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.emailImob}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListCondominiosTitle_id}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{condominiosController.prepareView}" value="#{bundle.ListCondominiosViewLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{condominiosController.prepareEdit}" value="#{bundle.ListCondominiosEditLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{condominiosController.destroy}" value="#{bundle.ListCondominiosDestroyLink}"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{condominiosController.prepareCreate}" value="#{bundle.ListCondominiosCreateLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ListCondominiosIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

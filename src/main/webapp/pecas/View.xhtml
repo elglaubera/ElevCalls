@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewPecasTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewPecasLabel_codigo}"/>
+                    <h:outputText value="#{pecasController.selected.codigo}" title="#{bundle.ViewPecasTitle_codigo}"/>
+                    <h:outputText value="#{bundle.ViewPecasLabel_nome}"/>
+                    <h:outputText value="#{pecasController.selected.nome}" title="#{bundle.ViewPecasTitle_nome}"/>
+                    <h:outputText value="#{bundle.ViewPecasLabel_marca}"/>
+                    <h:outputText value="#{pecasController.selected.marca}" title="#{bundle.ViewPecasTitle_marca}"/>
+                    <h:outputText value="#{bundle.ViewPecasLabel_qtde}"/>
+                    <h:outputText value="#{pecasController.selected.qtde}" title="#{bundle.ViewPecasTitle_qtde}"/>
+                    <h:outputText value="#{bundle.ViewPecasLabel_id}"/>
+                    <h:outputText value="#{pecasController.selected.id}" title="#{bundle.ViewPecasTitle_id}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{pecasController.destroyAndView}" value="#{bundle.ViewPecasDestroyLink}"/>
+                <br />
+                <br />
+                <h:link outcome="Edit" value="#{bundle.ViewPecasEditLink}"/>
+                <br />
+                <h:commandLink action="#{pecasController.prepareCreate}" value="#{bundle.ViewPecasCreateLink}" />
+                <br />
+                <h:commandLink action="#{pecasController.prepareList}" value="#{bundle.ViewPecasShowAllLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ViewPecasIndexLink}"/>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

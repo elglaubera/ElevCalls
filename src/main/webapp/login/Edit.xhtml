@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditLoginTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditLoginLabel_nomeUsuario}" for="nomeUsuario" />
+                    <h:inputText id="nomeUsuario" value="#{loginController.selected.nomeUsuario}" title="#{bundle.EditLoginTitle_nomeUsuario}" />
+                    <h:outputLabel value="#{bundle.EditLoginLabel_emailUsuario}" for="emailUsuario" />
+                    <h:inputText id="emailUsuario" value="#{loginController.selected.emailUsuario}" title="#{bundle.EditLoginTitle_emailUsuario}" />
+                    <h:outputLabel value="#{bundle.EditLoginLabel_confirmarEmail}" for="confirmarEmail" />
+                    <h:inputText id="confirmarEmail" value="#{loginController.selected.confirmarEmail}" title="#{bundle.EditLoginTitle_confirmarEmail}" />
+                    <h:outputLabel value="#{bundle.EditLoginLabel_senhaUsuario}" for="senhaUsuario" />
+                    <h:inputText id="senhaUsuario" value="#{loginController.selected.senhaUsuario}" title="#{bundle.EditLoginTitle_senhaUsuario}" />
+                    <h:outputLabel value="#{bundle.EditLoginLabel_confirmarSenha}" for="confirmarSenha" />
+                    <h:inputText id="confirmarSenha" value="#{loginController.selected.confirmarSenha}" title="#{bundle.EditLoginTitle_confirmarSenha}" />
+                    <h:outputLabel value="#{bundle.EditLoginLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{loginController.selected.id}" title="#{bundle.EditLoginTitle_id}" />
+                </h:panelGrid>
+                <h:commandLink action="#{loginController.update}" value="#{bundle.EditLoginSaveLink}"/>
+                <br />
+                <br />
+                <h:link outcome="View" value="#{bundle.EditLoginViewLink}"/>
+                <br />
+                <h:commandLink action="#{loginController.prepareList}" value="#{bundle.EditLoginShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.EditLoginIndexLink}" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

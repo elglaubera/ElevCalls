@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ListPecasTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:form styleClass="jsfcrud_list_form">
+                <h:panelGroup id="messagePanel" layout="block">
+                    <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+                </h:panelGroup>
+                <h:outputText escape="false" value="#{bundle.ListPecasEmpty}" rendered="#{pecasController.items.rowCount == 0}"/>
+                <h:panelGroup rendered="#{pecasController.items.rowCount > 0}">
+                    <h:outputText value="#{pecasController.pagination.pageFirstItem + 1}..#{pecasController.pagination.pageLastItem + 1}/#{pecasController.pagination.itemsCount}"/>&nbsp;
+                    <h:commandLink action="#{pecasController.previous}" value="#{bundle.Previous} #{pecasController.pagination.pageSize}" rendered="#{pecasController.pagination.hasPreviousPage}"/>&nbsp;
+                    <h:commandLink action="#{pecasController.next}" value="#{bundle.Next} #{pecasController.pagination.pageSize}" rendered="#{pecasController.pagination.hasNextPage}"/>&nbsp;
+                    <h:dataTable value="#{pecasController.items}" var="item" border="0" cellpadding="2" cellspacing="0" rowClasses="jsfcrud_odd_row,jsfcrud_even_row" rules="all" style="border:solid 1px">
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPecasTitle_codigo}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.codigo}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPecasTitle_nome}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.nome}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPecasTitle_marca}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.marca}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPecasTitle_qtde}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.qtde}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="#{bundle.ListPecasTitle_id}"/>
+                            </f:facet>
+                            <h:outputText value="#{item.id}"/>
+                        </h:column>
+                        <h:column>
+                            <f:facet name="header">
+                                <h:outputText value="&nbsp;"/>
+                            </f:facet>
+                            <h:commandLink action="#{pecasController.prepareView}" value="#{bundle.ListPecasViewLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{pecasController.prepareEdit}" value="#{bundle.ListPecasEditLink}"/>
+                            <h:outputText value=" "/>
+                            <h:commandLink action="#{pecasController.destroy}" value="#{bundle.ListPecasDestroyLink}"/>
+                        </h:column>
+                    </h:dataTable>
+                </h:panelGroup>
+                <br />
+                <h:commandLink action="#{pecasController.prepareCreate}" value="#{bundle.ListPecasCreateLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ListPecasIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewCondominiosTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_nomeCondominio}"/>
+                    <h:outputText value="#{condominiosController.selected.nomeCondominio}" title="#{bundle.ViewCondominiosTitle_nomeCondominio}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_endereco}"/>
+                    <h:outputText value="#{condominiosController.selected.endereco}" title="#{bundle.ViewCondominiosTitle_endereco}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_contrato}"/>
+                    <h:outputText value="#{condominiosController.selected.contrato}" title="#{bundle.ViewCondominiosTitle_contrato}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_qtdeElevadores}"/>
+                    <h:outputText value="#{condominiosController.selected.qtdeElevadores}" title="#{bundle.ViewCondominiosTitle_qtdeElevadores}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_marcaElevadores}"/>
+                    <h:outputText value="#{condominiosController.selected.marcaElevadores}" title="#{bundle.ViewCondominiosTitle_marcaElevadores}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_qtdeAndares}"/>
+                    <h:outputText value="#{condominiosController.selected.qtdeAndares}" title="#{bundle.ViewCondominiosTitle_qtdeAndares}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_qtdeBlocos}"/>
+                    <h:outputText value="#{condominiosController.selected.qtdeBlocos}" title="#{bundle.ViewCondominiosTitle_qtdeBlocos}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_nomeSindico}"/>
+                    <h:outputText value="#{condominiosController.selected.nomeSindico}" title="#{bundle.ViewCondominiosTitle_nomeSindico}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_telSindico}"/>
+                    <h:outputText value="#{condominiosController.selected.telSindico}" title="#{bundle.ViewCondominiosTitle_telSindico}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_emailSindico}"/>
+                    <h:outputText value="#{condominiosController.selected.emailSindico}" title="#{bundle.ViewCondominiosTitle_emailSindico}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_nomeSubSindico}"/>
+                    <h:outputText value="#{condominiosController.selected.nomeSubSindico}" title="#{bundle.ViewCondominiosTitle_nomeSubSindico}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_telSubSindico}"/>
+                    <h:outputText value="#{condominiosController.selected.telSubSindico}" title="#{bundle.ViewCondominiosTitle_telSubSindico}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_emailSubSindico}"/>
+                    <h:outputText value="#{condominiosController.selected.emailSubSindico}" title="#{bundle.ViewCondominiosTitle_emailSubSindico}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_imobiliaria}"/>
+                    <h:outputText value="#{condominiosController.selected.imobiliaria}" title="#{bundle.ViewCondominiosTitle_imobiliaria}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_telImob}"/>
+                    <h:outputText value="#{condominiosController.selected.telImob}" title="#{bundle.ViewCondominiosTitle_telImob}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_emailImob}"/>
+                    <h:outputText value="#{condominiosController.selected.emailImob}" title="#{bundle.ViewCondominiosTitle_emailImob}"/>
+                    <h:outputText value="#{bundle.ViewCondominiosLabel_id}"/>
+                    <h:outputText value="#{condominiosController.selected.id}" title="#{bundle.ViewCondominiosTitle_id}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{condominiosController.destroyAndView}" value="#{bundle.ViewCondominiosDestroyLink}"/>
+                <br />
+                <br />
+                <h:link outcome="Edit" value="#{bundle.ViewCondominiosEditLink}"/>
+                <br />
+                <h:commandLink action="#{condominiosController.prepareCreate}" value="#{bundle.ViewCondominiosCreateLink}" />
+                <br />
+                <h:commandLink action="#{condominiosController.prepareList}" value="#{bundle.ViewCondominiosShowAllLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ViewCondominiosIndexLink}"/>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
