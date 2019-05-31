@@ -4,19 +4,19 @@ _O Product Backlog é uma lista de funcionalidades desejada em um produto, que d
 
 _Na tabela a seguir, veremos como ficaram a ordem de prioridades do Product Backlog depois da organização das User Stories._
 
-| Código | Prioridade | Descrição |
+| _Código_ | _Prioridade_ | _Descrição_ |
 |--------|------------|-----------|
-|  US01  |    Alta    | Cadastro de usuários |
-|  US02  |    Alta    | Autenticação |
-|  US03  |   Média    | Editar login e senha |
-|  US04  |    Alta    | Cadastro de condomínios |
-|  US05  |   Média    | Editar cadastro de condomínios |
-|  US06  |    Alta    | Cadastro de peças |
-|  US07  |    Alta    | Editar controle de estoque |
-|  US08  |   Baixa    | Editar cadastro de funcionários |
-|  US09  |    Alta    | Registro de chamadas |
-|  US10  |    Alta    | Encerramento de chamadas |
-|  US11  |    Alta    | Consulta de pedidos de orçamentos |
-|  US12  |    Alta    | Cadastro de pendências |
-|  US13  |   Média    | Editar pendências |
-|  US14  |   Baixa    | Cadastro de funcionários |
+|  _US01_  |    _Alta_    | _Cadastro de usuários_ |
+|  _US02_  |    _Alta_    | _Autenticação_ |
+|  _US03_  |   _Média_    | _Editar login e senha_ |
+|  _US04_  |    _Alta_    | _Cadastro de condomínios_ |
+|  _US05_  |   _Média_    | _Editar cadastro de condomínios_ |
+|  _US06_  |    _Alta_    | _Cadastro de peças_ |
+|  _US07_  |    _Alta_    | _Editar controle de estoque_ |
+|  _US08_  |   _Baixa_    | _Editar cadastro de funcionários_ |
+|  _US09_  |    _Alta_    | _Registro de chamadas_ |
+|  _US10_  |    _Alta_    | _Encerramento de chamadas_ |
+|  _US11_  |    _Alta_    | _Consulta de pedidos de orçamentos_ |
+|  _US12_  |    _Alta_    | _Cadastro de pendências_ |
+|  _US13_  |   _Média_    | _Editar pendências_ |
+|  _US14_  |   _Baixa_    | _Cadastro de funcionários_ |
