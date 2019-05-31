@@ -9,3 +9,4 @@ As tabelas a seguir, mostram às divisões das Sprints para esse projeto.
 
 ![Sprint 3](https://user-images.githubusercontent.com/11911334/58716833-46f55500-83a0-11e9-96ba-966ec918ee23.png)
 
+![Sprint 4](https://user-images.githubusercontent.com/11911334/58716858-54124400-83a0-11e9-9585-ed59d267c101.png)
