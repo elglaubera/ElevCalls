@@ -1,8 +1,8 @@
 # User Stories
 
-A descrição das necessidades do usuário, baseado em conversas, para se estabelecer a solução de um problema através do ponto de vista de quem vai usar o sistema, é o que às _User Stories_ (estórias de usuários) propõem.
+_A descrição das necessidades do usuário, baseado em conversas, para se estabelecer a solução de um problema através do ponto de vista de quem vai usar o sistema, é o que às User Stories (estórias de usuários) propõem._
 
-Na tabela a seguir, veremos às _User Stories_ que foram definidas para o desenvolvimento do projeto.
+_Na tabela a seguir, veremos às User Stories que foram definidas para o desenvolvimento do projeto._
 
 | Código | Descrição |
 |--------|-----------|
