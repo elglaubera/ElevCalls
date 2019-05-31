@@ -9,6 +9,6 @@ Neste documento serão apresentados os artefatos e as informações para o plane
 ## [5. Arquitetura do Sistema](https://github.com/elglaubera/ElevCalls/blob/master/arquitetura_sistema.md)
 ## [6. Wireframes](https://github.com/elglaubera/ElevCalls/blob/master/wireframes.md)
 ## [7. Regras de Negócio](https://github.com/elglaubera/ElevCalls/blob/master/regras_de_negocio.md)
-## [8. Modelagem de dados]
+## [8. Modelagem de dados](https://github.com/elglaubera/ElevCalls/blob/master/modelagem_de_dados.md)
 ## [9. Telas e funcionalidades do sistema]
 
