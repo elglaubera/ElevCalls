@@ -47,4 +47,12 @@ A tela de registro de chamadas pode ser considerada como uma das principais tela
 
 Para trocar a senha e o login, o usuário vai fazer uso da tela de editar usuário de acordo com o desenvolvimento da User Story US03.
 
+![WireEdiUsuarios](https://user-images.githubusercontent.com/11911334/58726808-11a93100-83b9-11e9-9346-14a892942b9b.png)
+
+
+## 
+## _Tela Consultar Pendências_
+
+Os supervisores e os vendedores precisam consultar as pendências para saber o status das mesmas. A tela de consulta de pendências irá proporcionar a verificação desses serviços que estão sendo solicitados, podendo também alterar o status da pendência, de acordo com a User Story US14 e US16.
+
 
