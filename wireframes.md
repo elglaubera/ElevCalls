@@ -23,4 +23,12 @@ O usuário poderá preencher o formulário de cadastramento de peças nessa tela
 
 O cadastro de condomínios será feito nessa tela, onde o usuário fornecerá todos as informações solicitadas para o preenchimento completo do cadastro e que serão salvos no banco de dados. O desenvolvimento dessa tela está demonstrado na User Story US 04.
 
+![WireCadCondominio](https://user-images.githubusercontent.com/11911334/58726720-dad31b00-83b8-11e9-94a0-eccb30f3d8c9.png)
+
+
+##
+## _Tela Cadastro de Funcionários_
+
+Nessa tela, o usuário irá fazer o cadastro dos funcionários da empresa, onde serão preenchidos os campos solicitados. No campo telefone empresa, será cadastrado um telefone fornecido pela empresa que através dele, será feito a localização do técnico por GPS, para poder ser visto através do mapa na tela de chamados ou na tela de localização dos técnicos, o desenvolvimento dessa tela será feito de acordo com a User Story US08.
+
 
