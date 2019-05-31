@@ -31,4 +31,12 @@ O cadastro de condomínios será feito nessa tela, onde o usuário fornecerá to
 
 Nessa tela, o usuário irá fazer o cadastro dos funcionários da empresa, onde serão preenchidos os campos solicitados. No campo telefone empresa, será cadastrado um telefone fornecido pela empresa que através dele, será feito a localização do técnico por GPS, para poder ser visto através do mapa na tela de chamados ou na tela de localização dos técnicos, o desenvolvimento dessa tela será feito de acordo com a User Story US08.
 
+![WireCadFuncionarios](https://user-images.githubusercontent.com/11911334/58726748-eaeafa80-83b8-11e9-9375-e7468310a259.png)
+
+
+##
+## _Tela Registro de Chamadas_
+
+A tela de registro de chamadas pode ser considerada como uma das principais telas do sistema, onde o usuário fará o cadastramento de uma chamada utilizando dados de condomínio, técnicos e fornecerá dados para cadastro de pendência. Na parte onde está localizado o mapa na tela, será mostrado a localização do condomínio e a localização dos colaboradores que estão aptos para atender a chamada, fazendo com que o usuário verifique qual técnico poderá atender o cliente de forma mais rápida. O desenvolvimento dessa tela está de acordo com a User Story US 09.
+
 
