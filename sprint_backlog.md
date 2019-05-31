@@ -5,6 +5,8 @@ As tabelas a seguir, mostram às divisões das Sprints para esse projeto.
 
 ## _Sprint 1_
 
+A Sprint 1 tem como objetivo preparar o ambiente de trabalho verificando as necessidades para o desenvolvimento do projeto. Nesta etapa, são criados os wireframes que são utilizados como base para o desenvolvimento das telas do sistema. A modelagem do banco de dados que a aplicação irá utilizar é realizada nesse momento. 
+
 ![Sprint 1](https://user-images.githubusercontent.com/11911334/58716751-18777a00-83a0-11e9-8a82-e990276570a1.png)
 
 ![Sprint 2](https://user-images.githubusercontent.com/11911334/58716776-2af1b380-83a0-11e9-996a-1024a081e25c.png)
