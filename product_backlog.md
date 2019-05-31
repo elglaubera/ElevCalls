@@ -12,3 +12,11 @@ Na tabela a seguir, veremos como ficaram a ordem de prioridades do _Product Back
 |  US04  |    Alta    | Cadastro de condomínios |
 |  US05  |   Média    | Editar cadastro de condomínios |
 |  US06  |    Alta    | Cadastro de peças |
+|  US07  |    Alta    | Editar controle de estoque |
+|  US08  |   Baixa    | Editar cadastro de funcionários |
+|  US09  |    Alta    | Registro de chamadas |
+|  US10  |    Alta    | Encerramento de chamadas |
+|  US11  |    Alta    | Consulta de pedidos de orçamentos |
+|  US12  |    Alta    | Cadastro de pendências |
+|  US13  |   Média    | Editar pendências |
+|  US14  |   Baixa    | Cadastro de funcionários |
