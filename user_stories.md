@@ -16,6 +16,7 @@ Na tabela a seguir, veremos às _User Stories_ que foram definidas para o desenv
 |  US08  | Como usuário do sistema quero editar as informações dos cadastros dos funcionários para atualizar quando for necessário. |
 |  US09  | Como usuário do sistema quero realizar o cadastro de uma chamada para que seja registrada a solicitação do cliente. |
 |  US10  | Como usuário do sistema quero finalizar uma chamada para registrar uma possível pendência de serviços ou peças para serem trocadas. |
-|  US11  | Como usuário do sistema quero poder cadastrar uma pendência para que possa ter um orçamento gerado. |
-|  US12  | Como usuário do sistema quero poder consultar os serviços pendentes para serem editados quando for preciso. |
-|  US13  | Como usuário do sistema quero poder cadastrar novos funcionários quando for necessário. |
+|  US11  | Como usuário do sistema quero poder consultar as pendências que estão abertas para gerar orçamento ao cliente. |
+|  US12  | Como usuário do sistema quero poder cadastrar uma pendência para que possa ter um orçamento gerado. |
+|  US13  | Como usuário do sistema quero poder consultar os serviços pendentes para serem editados quando for preciso. |
+|  US14  | Como usuário do sistema quero poder cadastrar novos funcionários quando for necessário. |
