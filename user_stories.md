@@ -4,7 +4,7 @@ _A descrição das necessidades do usuário, baseado em conversas, para se estab
 
 _Na tabela a seguir, veremos às User Stories que foram definidas para o desenvolvimento do projeto._
 
-_| Código | Descrição |
+| Código | Descrição |
 |--------|-----------|
 |  US01  | Como usuário do sistema quero me cadastrar para ter acesso às funcionalidades oferecidas. |
 |  US02  | Como usuário do sistema quero me identificar através de login e senha para poder utilizar o sistema. |
@@ -19,4 +19,4 @@ _| Código | Descrição |
 |  US11  | Como usuário do sistema quero poder consultar as pendências que estão abertas para gerar orçamento ao cliente. |
 |  US12  | Como usuário do sistema quero poder cadastrar uma pendência para que possa ter um orçamento gerado. |
 |  US13  | Como usuário do sistema quero poder consultar os serviços pendentes para serem editados quando for preciso. |
-|  US14  | Como usuário do sistema quero poder cadastrar novos funcionários quando for necessário. |_
+|  US14  | Como usuário do sistema quero poder cadastrar novos funcionários quando for necessário. |
