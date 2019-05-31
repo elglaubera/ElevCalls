@@ -39,4 +39,12 @@ Nessa tela, o usuário irá fazer o cadastro dos funcionários da empresa, onde 
 
 A tela de registro de chamadas pode ser considerada como uma das principais telas do sistema, onde o usuário fará o cadastramento de uma chamada utilizando dados de condomínio, técnicos e fornecerá dados para cadastro de pendência. Na parte onde está localizado o mapa na tela, será mostrado a localização do condomínio e a localização dos colaboradores que estão aptos para atender a chamada, fazendo com que o usuário verifique qual técnico poderá atender o cliente de forma mais rápida. O desenvolvimento dessa tela está de acordo com a User Story US 09.
 
+![WireCadChamadas](https://user-images.githubusercontent.com/11911334/58726694-c68f1e00-83b8-11e9-9d25-c788dfb5ad24.png)
+
+
+##
+## _Tela Editar Usuário_
+
+Para trocar a senha e o login, o usuário vai fazer uso da tela de editar usuário de acordo com o desenvolvimento da User Story US03.
+
 
