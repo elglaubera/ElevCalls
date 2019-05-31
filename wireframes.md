@@ -15,4 +15,12 @@ Nessa tela, o usuário terá que preencher os campos solicitados de acordo com o
 
 O usuário poderá preencher o formulário de cadastramento de peças nessa tela, informando o código da peça, nome da peça, a quantidade de peças e as marcas de elevadores em que essa peça poderá ser utilizada, o desenvolvimento dessa tela está User Story US06. 
 
+![WireCadPeças](https://user-images.githubusercontent.com/11911334/58726791-035b1500-83b9-11e9-8bd8-c3b7ef2443d7.png)
+
+
+##
+## _Tela Cadastro de Condomínios_
+
+O cadastro de condomínios será feito nessa tela, onde o usuário fornecerá todos as informações solicitadas para o preenchimento completo do cadastro e que serão salvos no banco de dados. O desenvolvimento dessa tela está demonstrado na User Story US 04.
+
 
