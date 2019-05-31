@@ -4,4 +4,11 @@ O _Product Backlog_ é uma lista de funcionalidades desejada em um produto, que 
 
 Na tabela a seguir, veremos como ficaram a ordem de prioridades do _Product Backlog_ depois da organização das _User Stories_.
 
-
+| Código | Prioridade | Descrição |
+|--------|------------|-----------|
+|  US01  |    Alta    | Cadastro de usuários |
+|  US02  |    Alta    | Autenticação |
+|  US03  |   Média    | Editar login e senha |
+|  US04  |    Alta    | Cadastro de condomínios |
+|  US05  |   Média    | Editar cadastro de condomínios |
+|  US06  |    Alta    | Cadastro de peças |
