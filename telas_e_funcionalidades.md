@@ -50,7 +50,7 @@ _A listagem que é apresentada nessa tela, permite que o usuário consulte o cad
 ##
 ## _Tela Cadastro de Peças_
 
-_Os elevadores possuem vários tipos de marcas e modelos, e para controlar o estoque de peças, é necessário ter todos esses tipos de peças registrados no sistema com todas as informções possíveis. Com isso, pode-se controlar o estoque sabendo a quantidade de cada tipo de peça que a empresa possui. Na tela de cadastro de peças são feitos esses registros no sistema._
+_Os elevadores possuem vários tipos de marcas e modelos, e para controlar o estoque de peças, é necessário ter todos esses registros no sistema com todas as informções possíveis. Com isso, pode-se controlar o estoque sabendo a quantidade de cada tipo de peça que a empresa possui. Na tela de cadastro de peças são feitos esses registros no sistema._
 
 ![TelaCadastroPecas](https://user-images.githubusercontent.com/11911334/60312607-482f8880-9932-11e9-9114-32fa1851ace0.png)
 
