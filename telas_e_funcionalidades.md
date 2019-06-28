@@ -5,17 +5,23 @@ _A seguir são apresentadas as telas do sistema que foram implementadas._
 ##
 ## _Tela Login_
 
+_Essa é a tela início do sistema, onde se faz necessário estar logado para ter acesso as funcionalidades. O usuário tem que ter um login e senha cadastrados para dar início a utilização da aplicação._
+
 ![TelaLogin](https://user-images.githubusercontent.com/11911334/60311681-b4a88880-992e-11e9-8a5b-361e135c69ee.png)
 
 
 ##
 ## _Tela Criar Conta_
 
+_Se o usuário não possui um login, nessa tela é criado uma conta com senha que é salvo no sistema.
+
 ![TelaCriarConta](https://user-images.githubusercontent.com/11911334/60312484-dbb48980-9931-11e9-989f-a82e078f8fa7.png)
 
 
 ##
 ## _Tela Cadastro de Chamadas_
+
+_Essa funcionalidade garante que a solicitação do cliente que tem um elevador defeituoso seja registrada no sistema, onde o usuário preenche os campos apresentados com as informações que são passadas por telefone no momento do pedido de abertura de chamada._
 
 ![TelaCadastroChamadas](https://user-images.githubusercontent.com/11911334/60312541-0dc5eb80-9932-11e9-8c16-766fe45abb9c.png)
 
