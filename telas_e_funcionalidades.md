@@ -51,6 +51,8 @@ _A seguir são apresentadas as telas do sistema que foram implementadas._
 ##
 ## _Tela Cadastro de Funcionários_
 
+![TelaCadastroFuncionarios](https://user-images.githubusercontent.com/11911334/60312580-32ba5e80-9932-11e9-8d7f-2fa039139128.png)
+
 
 ##
 ## _Tela Listar Funcionários_
