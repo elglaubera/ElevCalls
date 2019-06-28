@@ -4,4 +4,6 @@ _A arquitetura para esse projeto foi definida como MVC (Model, View, Controller)
 
 ##
 
+![mvcArquitetura](https://user-images.githubusercontent.com/11911334/60374832-b3359980-99dc-11e9-9770-ec7b2519bee8.jpg)
 
+##
