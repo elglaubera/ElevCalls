@@ -29,15 +29,20 @@ _Essa funcionalidade garante que a solicitação do cliente que tem um elevador 
 ##
 ## _Tela Listar Chamadas_
 
+_Nessa tela o usuário pode veirifcar a lista das chamadas e os status das mesmas, com isso, pode escolher qual deseja visualizar com as informações completas e também atualizar a chamada escolhida, inserindo novas informações relacionadas ao atendimento feito pelos técnicos._   
 
 ##
-## _Tela Cadastro de Condomínnios_
+## _Tela Cadastro de Condomínios_
+
+_Todas as vezes que um novo cliente assina contrato com a empresa, são solicitados diversas informaçôes permitentes ao condomínio, seus administradores e também sobre os elevadores. Esses dados são cadastrados nos sistema através dessa tela._  
 
 ![TelaCadastroCondominios](https://user-images.githubusercontent.com/11911334/60312558-20d8bb80-9932-11e9-8e3e-9b8646c8f0be.png)
 
 
 ##
 ## _Tela listar Condomínios_
+
+_A listagem que é apresentada nessa tela, permite que o usuário consulte o cadastro do condomínio para verificar informações que são necessárias para contatos com o cliente, como telefone e email do síndico por exemplo. O usuário também pode escolher um registro que precisa ser atualizado, uma vez que os clientes trocam de administradoras e conselho com alguma frequência, de acordo com o regimento de cada condomínio._
 
 ![TelaListarCondominios](https://user-images.githubusercontent.com/11911334/60312648-7a40ea80-9932-11e9-94fb-0ccb4aa9f90d.png)
 
