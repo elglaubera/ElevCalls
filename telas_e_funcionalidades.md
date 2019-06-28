@@ -13,7 +13,7 @@ _Essa é a tela início do sistema, onde se faz necessário estar logado para te
 ##
 ## _Tela Criar Conta_
 
-_Se o usuário não possui um login, nessa tela é criado uma conta com senha que é salvo no sistema.
+_Se o usuário não possui um login, nessa tela é criado uma conta com senha que é salvo no sistema._
 
 ![TelaCriarConta](https://user-images.githubusercontent.com/11911334/60312484-dbb48980-9931-11e9-989f-a82e078f8fa7.png)
 
