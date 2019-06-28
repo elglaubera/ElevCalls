@@ -45,6 +45,8 @@ _A seguir são apresentadas as telas do sistema que foram implementadas._
 ##
 ## _Tela Listar Peças_
 
+![TelaListarPecas](https://user-images.githubusercontent.com/11911334/60312692-a6f50200-9932-11e9-8a4b-d6c62ae5abb0.png)
+
 
 ##
 ## _Tela Cadastro de Funcionários_
