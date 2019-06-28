@@ -45,3 +45,5 @@ O formulário de avaliação foi criado através do Google Forms, onde apresenta
 ![pergunta8](https://user-images.githubusercontent.com/11911334/60373353-3f908e00-99d6-11e9-8d96-efdcf1e89a2b.png)
 
 ![pergunta9](https://user-images.githubusercontent.com/11911334/60373365-4c14e680-99d6-11e9-9f5b-501fb3d38b32.png)
+
+![pergunta10](https://user-images.githubusercontent.com/11911334/60373384-5931d580-99d6-11e9-93eb-83ce55e91bd9.png)
