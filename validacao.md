@@ -22,11 +22,7 @@ O formulário de avaliação foi criado através do Google Forms, onde apresenta
 
 ![quemRespondeu](https://user-images.githubusercontent.com/11911334/60373405-68b11e80-99d6-11e9-9b84-a58b84ecaf00.png)
 
-##
-
 ![nomeAvaliacao](https://user-images.githubusercontent.com/11911334/60373243-e0327e00-99d5-11e9-970f-5233ea6098a8.png)
-
-##
 
 
 
