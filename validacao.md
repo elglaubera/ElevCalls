@@ -26,6 +26,8 @@ O formulário de avaliação foi criado através do Google Forms, onde apresenta
 
 ![funcaoAvaliacao](https://user-images.githubusercontent.com/11911334/60373221-d3158f00-99d5-11e9-9885-33c3fe9a551b.png)
 
+![empresaAvaliacao](https://user-images.githubusercontent.com/11911334/60373203-c3964600-99d5-11e9-9cb3-0b1fa8a45831.png)
+
 ##
 
 
