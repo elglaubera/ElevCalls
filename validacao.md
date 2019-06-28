@@ -19,7 +19,6 @@ _Os usuários que testaram o sistema, acessaram todas as funcionalidades, onde a
 _Após a avaliação do sistema, todos os usuários que utilizaram a aplicação, receberam o formulário de validação, onde responderam todas as questões e colocaram o seu parecer sobre a usabilidade do sistema, também foi descrito a experiência que foi obtida na verificação.
 O formulário de avaliação foi criado através do Google Forms, onde apresenta gráficos das respostas para medições de satisfação em relação a utilização do sistema._
 
-##
 
 ![quemRespondeu](https://user-images.githubusercontent.com/11911334/60373405-68b11e80-99d6-11e9-9b84-a58b84ecaf00.png)
 
