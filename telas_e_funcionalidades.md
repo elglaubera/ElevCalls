@@ -63,6 +63,8 @@ _A seguir são apresentadas as telas do sistema que foram implementadas._
 ##
 ## _Tela Cadastro de Pendências_
 
+![TelaCadastroPendencias](https://user-images.githubusercontent.com/11911334/60312622-5c738580-9932-11e9-9163-52046895f11d.png)
+
 
 ##
 ## _Tela Listar Pendências_
