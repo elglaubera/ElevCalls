@@ -13,11 +13,11 @@ _A seguir são apresentadas as telas do sistema que foram implementadas._
 
 
 ##
-## _Tela Cadastro de Chamadas
+## _Tela Cadastro de Chamadas_
 
 
 ##
-## _Tela Listar Chamadas
+## _Tela Listar Chamadas_
 
 
 ##
@@ -49,6 +49,6 @@ _A seguir são apresentadas as telas do sistema que foram implementadas._
 
 
 ##
-## _Tela Listar Pendências
+## _Tela Listar Pendências_
 
 
