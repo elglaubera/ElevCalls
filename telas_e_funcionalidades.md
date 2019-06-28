@@ -50,11 +50,15 @@ _A listagem que é apresentada nessa tela, permite que o usuário consulte o cad
 ##
 ## _Tela Cadastro de Peças_
 
+_Os elevadores possuem vários tipos de marcas e modelos, e para controlar o estoque de peças, é necessário ter todos esses tipos de peças registrados no sistema com todas as informções possíveis. Com isso, pode-se controlar o estoque sabendo a quantidade de cada tipo de peça que a empresa possui. Na tela de cadastro de peças são feitos esses registros no sistema._
+
 ![TelaCadastroPecas](https://user-images.githubusercontent.com/11911334/60312607-482f8880-9932-11e9-9114-32fa1851ace0.png)
 
 
 ##
 ## _Tela Listar Peças_
+
+_A tela de listar peças, proporciona o usuário saber quais peças estão registradas no sistema, bem como identificar quais estão em falta para se fazer a reposição. Nessa tela também é possivel escolher qual registro o usuário quer editar, fazendo assim a atualização da quantidade das peças, controlando o estoque._  
 
 ![TelaListarPecas](https://user-images.githubusercontent.com/11911334/60312692-a6f50200-9932-11e9-8a4b-d6c62ae5abb0.png)
 
@@ -62,11 +66,15 @@ _A listagem que é apresentada nessa tela, permite que o usuário consulte o cad
 ##
 ## _Tela Cadastro de Funcionários_
 
+_Nessa tela são cadastrados todos os colaboradores que trabalham na empresa. Todas as informações requisitadas pelo contratante ao contratado, são registradas aqui. Dados como telefone particular e que a empresa fornece, são essenciais para o funcionamento do repasse de chamadas aos técnicos._
+
 ![TelaCadastroFuncionarios](https://user-images.githubusercontent.com/11911334/60312580-32ba5e80-9932-11e9-8d7f-2fa039139128.png)
 
 
 ##
 ## _Tela Listar Funcionários_
+
+_Essa tela tem a função de visualizar de forma rápida os dados básicos do colaborador. Também proporciona poder veificar o cadastro completo do funcionário através do link visualizar, bem como editar esse cadastro através do link atualizar._
 
 ![TelaListarFuncionarios](https://user-images.githubusercontent.com/11911334/60312662-888f0680-9932-11e9-8e47-daffe2e9ccca.png)
 
@@ -74,10 +82,14 @@ _A listagem que é apresentada nessa tela, permite que o usuário consulte o cad
 ##
 ## _Tela Cadastro de Pendências_
 
+_O registro de pendências no sistema é uma das principais funcionaidades do sistema, através desse cadastro, os usuários conseguirão agilizar os reparos necessários nos elevadores defeituosos. Supervisores e vendedores são os usuários que mais se beneficiam dessa parte._
+
 ![TelaCadastroPendencias](https://user-images.githubusercontent.com/11911334/60312622-5c738580-9932-11e9-9163-52046895f11d.png)
 
 
 ##
 ## _Tela Listar Pendências_
+
+_Junto com o cadastro de pendências, a tela de listar pendências, tem uma importância significativa nos sistema. Nessa tela pode-se visualizar os registros e saber, através do status, o próximo passo a ser seguido para regularizar o elevador defeituoso. Na lista existe um link que envia para edição do cadastro escolhido e assim atualizar o andamento dessa pendência._  
 
 
