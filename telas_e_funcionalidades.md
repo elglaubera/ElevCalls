@@ -11,3 +11,44 @@ _A seguir são apresentadas as telas do sistema que foram implementadas._
 ##
 ## _Tela Criar Conta_
 
+
+##
+## _Tela Cadastro de Chamadas
+
+
+##
+## _Tela Listar Chamadas
+
+
+##
+## _Tela Cadastro de Condomínnios_
+
+
+##
+## _Tela listar Condomínios_
+
+
+##
+## _Tela Cadastro de Peças_
+
+
+##
+## _Tela Listar Peças_
+
+
+##
+## _Tela Cadastro de Funcionários_
+
+
+##
+## _Tela Listar Funcionários_
+
+
+##
+## _Tela Cadastro de Pendências_
+
+
+##
+## _Tela Listar Pendências
+
+
