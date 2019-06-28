@@ -39,6 +39,8 @@ _A seguir são apresentadas as telas do sistema que foram implementadas._
 ##
 ## _Tela Cadastro de Peças_
 
+![TelaCadastroPecas](https://user-images.githubusercontent.com/11911334/60312607-482f8880-9932-11e9-9114-32fa1851ace0.png)
+
 
 ##
 ## _Tela Listar Peças_
