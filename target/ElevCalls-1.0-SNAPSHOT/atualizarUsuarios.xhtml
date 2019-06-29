@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <!-- Bootstrap -->
+        <h:outputStylesheet name="vendors/bootstrap/dist/css/bootstrap.min.css"/>
+        <!-- Font Awesome -->
+        <h:outputStylesheet name="vendors/font-awesome/css/font-awesome.min.css"/>
+        <!-- NProgress -->
+        <h:outputStylesheet name="vendors/nprogress/nprogress.css"/>
+
+        <!-- Custom Theme Style -->
+        <h:outputStylesheet name="build/css/custom.min.css"/>
+
+        <title>Usuário </title>
+
+
+    </h:head>
+
+    <h:body class="nav-md">
+        <div class="container body">
+            <div class="main_container">
+                <div class="col-md-3 left_col">
+                    <div class="left_col scroll-view">
+                        <div class="navbar nav_title" style="border: 0;">
+                            <a href="index.jsp" class="site_title"><i class="fa fa-wrench"></i> <span>ElevCalls</span></a>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <!-- menu profile quick info -->
+                        <div class="profile clearfix">
+                            <div class="profile_info">
+                                <span>Bem vindo,</span>
+                                <h2></h2>
+                            </div>
+                        </div>
+                        <!-- /menu profile quick info -->
+
+
+                        <!-- sidebar menu -->
+                        <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+                            <div class="menu_section">
+                                <h3>Menu</h3>
+                                <ul class="nav side-menu">
+                                    <li><a><i class="fa fa-phone-square"></i> Chamadas <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="cadastroChamadas.xhtml">Registrar</a></li>
+                                            <li><a href="listaChamadas.xhtml">Listar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a><i class="fa fa-building-o"></i> Condomínios <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="cadastroCondominios.xhtml">Cadastrar</a></li>
+                                            <li><a href="listaCondominios.xhtml">Listar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a><i class="fa fa-cogs"></i> Peças <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="cadastroPecas.xhtml">Cadastrar</a></li>
+                                            <li><a href="listaPecas.xhtml">Listar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a><i class="fa fa-user"></i> Funcionários <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="cadastroFuncionarios.xhtml">Cadastrar</a></li>
+                                            <li><a href="listaFuncionarios.xhtml">Listar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a><i class="fa fa-list"></i> Pendências <span class="fa fa-chevron-down"></span></a>
+                                        <ul class="nav child_menu">
+                                            <li><a href="cadastroPendencias.xhtml">Cadastrar</a></li>
+                                            <li><a href="listaPendencias.xhtml">Listar</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div><!-- /sidebar menu -->
+
+                        <!-- /menu footer buttons -->
+                        <!-- /menu footer buttons -->
+                    </div>
+                </div>
+
+                <!-- top navigation -->
+                <div class="top_nav">
+                    <div class="nav_menu">
+                        <nav>
+                            <div class="nav toggle">
+                                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+                            </div>
+
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="">
+                                    <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                        Usuário
+                                        <span class=" fa fa-angle-down"></span>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-usermenu pull-right">
+                                        <li><a href="cadastroUsuarios.xhtml"> Cadastro de usuários</a></li>
+                                        <li><a href="listaUsuarios.xhtml"> Lista de usuários</a></li>
+                                        <li><a href="login.xhtml"><i class="fa fa-sign-out pull-right"></i> Sair</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- /top navigation -->
+
+                <!-- page content -->
+                <div class="right_col" role="main">
+                    <div class="">
+                        <div class="page-title">
+                            <div class="title_left">
+                                <h3>Atualiza Usuário </h3>
+                            </div>
+
+
+                        </div>
+                        <div class="clearfix"></div>
+
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="x_panel">
+
+                                    <div class="x_content">
+
+                                        <form id="demo-form2" class="form-horizontal form-label-left">
+
+                                            <div class="x_title">
+                                                <h2>Informações </h2>
+                                                <div class="clearfix"></div>
+                                            </div>
+
+                                            <div class="item form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="text">Código <span class="required">*</span>
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" id="codigo" name="id" required="required" class="form-control col-md-7 col-xs-12" readonly="readonly"></input>
+                                                </div>
+                                            </div>
+                                            <div class="item form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="text">Usuário <span class="required">*</span>
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="text" id="login" name="usuarios" required="required" class="form-control col-md-7 col-xs-12"></input>
+                                                </div>
+                                            </div>
+                                            <div class="item form-group">
+                                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">Email <span class="required">*</span>
+                                                </label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12 " data-error="Digite email correto"></input>
+                                                </div>
+                                            </div>
+                                            <div class="item form-group">
+                                                <label for="password" class="control-label col-md-3">Senha <span class="required">*</span></label>
+                                                <div class="col-md-6 col-sm-6 col-xs-12">
+                                                    <input id="password" type="password" name="senha" class="form-control col-md-7 col-xs-12" required="required"></input>
+                                                </div>
+                                            </div>
+                                            <div class="ln_solid col-md-12 col-sm-12 col-xs-12 form-group"></div>
+                                            <div class="col-md-9 col-sm-12 col-xs-12 form-group">
+                                                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-6">
+                                                    <button type="reset" class="btn btn-warning">Apagar</button>
+                                                    <button type="button" class="btn btn-danger">Cancelar</button>
+                                                    <button type="submit" class="btn btn-success">Salvar</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /page content -->
+
+                <!-- footer content -->
+                <footer>
+                    <div class="pull-right">
+                        ElevCalls - Criado por Glauber Rodrigues
+                    </div>
+                    <div class="clearfix"></div>
+                </footer>
+                <!-- /footer content -->
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <h:outputScript name="vendors/jquery/dist/jquery.min.js"/>
+        <!-- Bootstrap -->
+        <h:outputScript name="vendors/bootstrap/dist/js/bootstrap.min.js"/>
+        <!-- FastClick -->
+        <h:outputScript name="vendors/fastclick/lib/fastclick.js"/>
+        <!-- NProgress -->
+        <h:outputScript name="vendors/nprogress/nprogress.js"/>
+        <!-- validator -->
+        <h:outputScript name="vendors/validator/validator.js"/>
+
+        <!-- Custom Theme Scripts -->
+        <h:outputScript name="build/js/custom.min.js"/>
+
+    </h:body>
+</html>
+

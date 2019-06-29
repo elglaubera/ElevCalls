@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.ViewChamadasTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputText value="#{bundle.ViewChamadasLabel_condominios}"/>
+                    <h:outputText value="#{chamadasController.selected.condominios}" title="#{bundle.ViewChamadasTitle_condominios}"/>
+                    <h:outputText value="#{bundle.ViewChamadasLabel_funcionarios}"/>
+                    <h:outputText value="#{chamadasController.selected.funcionarios}" title="#{bundle.ViewChamadasTitle_funcionarios}"/>
+                    <h:outputText value="#{bundle.ViewChamadasLabel_login}"/>
+                    <h:outputText value="#{chamadasController.selected.login}" title="#{bundle.ViewChamadasTitle_login}"/>
+                    <h:outputText value="#{bundle.ViewChamadasLabel_horaChamada}"/>
+                    <h:outputText value="#{chamadasController.selected.horaChamada}" title="#{bundle.ViewChamadasTitle_horaChamada}"/>
+                    <h:outputText value="#{bundle.ViewChamadasLabel_horaEnvio}"/>
+                    <h:outputText value="#{chamadasController.selected.horaEnvio}" title="#{bundle.ViewChamadasTitle_horaEnvio}"/>
+                    <h:outputText value="#{bundle.ViewChamadasLabel_descricaoDefeito}"/>
+                    <h:outputText value="#{chamadasController.selected.descricaoDefeito}" title="#{bundle.ViewChamadasTitle_descricaoDefeito}"/>
+                    <h:outputText value="#{bundle.ViewChamadasLabel_nomeSolicitante}"/>
+                    <h:outputText value="#{chamadasController.selected.nomeSolicitante}" title="#{bundle.ViewChamadasTitle_nomeSolicitante}"/>
+                    <h:outputText value="#{bundle.ViewChamadasLabel_telSolicitante}"/>
+                    <h:outputText value="#{chamadasController.selected.telSolicitante}" title="#{bundle.ViewChamadasTitle_telSolicitante}"/>
+                    <h:outputText value="#{bundle.ViewChamadasLabel_id}"/>
+                    <h:outputText value="#{chamadasController.selected.id}" title="#{bundle.ViewChamadasTitle_id}"/>
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{chamadasController.destroyAndView}" value="#{bundle.ViewChamadasDestroyLink}"/>
+                <br />
+                <br />
+                <h:link outcome="Edit" value="#{bundle.ViewChamadasEditLink}"/>
+                <br />
+                <h:commandLink action="#{chamadasController.prepareCreate}" value="#{bundle.ViewChamadasCreateLink}" />
+                <br />
+                <h:commandLink action="#{chamadasController.prepareList}" value="#{bundle.ViewChamadasShowAllLink}"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.ViewChamadasIndexLink}"/>
+
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

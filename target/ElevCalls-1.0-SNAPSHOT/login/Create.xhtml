@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateLoginTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreateLoginLabel_nomeUsuario}" for="nomeUsuario" />
+                    <h:inputText id="nomeUsuario" value="#{loginController.selected.nomeUsuario}" title="#{bundle.CreateLoginTitle_nomeUsuario}" />
+                    <h:outputLabel value="#{bundle.CreateLoginLabel_emailUsuario}" for="emailUsuario" />
+                    <h:inputText id="emailUsuario" value="#{loginController.selected.emailUsuario}" title="#{bundle.CreateLoginTitle_emailUsuario}" />
+                    <h:outputLabel value="#{bundle.CreateLoginLabel_confirmarEmail}" for="confirmarEmail" />
+                    <h:inputText id="confirmarEmail" value="#{loginController.selected.confirmarEmail}" title="#{bundle.CreateLoginTitle_confirmarEmail}" />
+                    <h:outputLabel value="#{bundle.CreateLoginLabel_senhaUsuario}" for="senhaUsuario" />
+                    <h:inputText id="senhaUsuario" value="#{loginController.selected.senhaUsuario}" title="#{bundle.CreateLoginTitle_senhaUsuario}" />
+                    <h:outputLabel value="#{bundle.CreateLoginLabel_confirmarSenha}" for="confirmarSenha" />
+                    <h:inputText id="confirmarSenha" value="#{loginController.selected.confirmarSenha}" title="#{bundle.CreateLoginTitle_confirmarSenha}" />
+                    <h:outputLabel value="#{bundle.CreateLoginLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{loginController.selected.id}" title="#{bundle.CreateLoginTitle_id}" />
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{loginController.create}" value="#{bundle.CreateLoginSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{loginController.prepareList}" value="#{bundle.CreateLoginShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.CreateLoginIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditPendenciasTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditPendenciasLabel_chamadas}" for="chamadas" />
+                    <h:selectOneMenu id="chamadas" value="#{pendenciasController.selected.chamadas}" title="#{bundle.EditPendenciasTitle_chamadas}" >
+                        <f:selectItems value="#{chamadasController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditPendenciasLabel_funcionarios}" for="funcionarios" />
+                    <h:selectOneMenu id="funcionarios" value="#{pendenciasController.selected.funcionarios}" title="#{bundle.EditPendenciasTitle_funcionarios}" required="true" requiredMessage="#{bundle.EditPendenciasRequiredMessage_funcionarios}">
+                        <f:selectItems value="#{funcionariosController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditPendenciasLabel_pecasPendencias}" for="pecasPendencias" />
+                    <h:selectOneMenu id="pecasPendencias" value="#{pendenciasController.selected.pecasPendencias}" title="#{bundle.EditPendenciasTitle_pecasPendencias}" >
+                        <f:selectItems value="#{pecasPendeciasController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditPendenciasLabel_login}" for="login" />
+                    <h:selectOneMenu id="login" value="#{pendenciasController.selected.login}" title="#{bundle.EditPendenciasTitle_login}" required="true" requiredMessage="#{bundle.EditPendenciasRequiredMessage_login}">
+                        <f:selectItems value="#{loginController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditPendenciasLabel_descricaoServico}" for="descricaoServico" />
+                    <h:inputText id="descricaoServico" value="#{pendenciasController.selected.descricaoServico}" title="#{bundle.EditPendenciasTitle_descricaoServico}" />
+                    <h:outputLabel value="#{bundle.EditPendenciasLabel_dataSolicitacao}" for="dataSolicitacao" />
+                    <h:inputText id="dataSolicitacao" value="#{pendenciasController.selected.dataSolicitacao}" title="#{bundle.EditPendenciasTitle_dataSolicitacao}" />
+                    <h:outputLabel value="#{bundle.EditPendenciasLabel_qtdePecas}" for="qtdePecas" />
+                    <h:inputText id="qtdePecas" value="#{pendenciasController.selected.qtdePecas}" title="#{bundle.EditPendenciasTitle_qtdePecas}" />
+                    <h:outputLabel value="#{bundle.EditPendenciasLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{pendenciasController.selected.id}" title="#{bundle.EditPendenciasTitle_id}" />
+                </h:panelGrid>
+                <h:commandLink action="#{pendenciasController.update}" value="#{bundle.EditPendenciasSaveLink}"/>
+                <br />
+                <br />
+                <h:link outcome="View" value="#{bundle.EditPendenciasViewLink}"/>
+                <br />
+                <h:commandLink action="#{pendenciasController.prepareList}" value="#{bundle.EditPendenciasShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.EditPendenciasIndexLink}" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

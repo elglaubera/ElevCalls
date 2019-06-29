@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.CreateCondominiosTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_nomeCondominio}" for="nomeCondominio" />
+                    <h:inputText id="nomeCondominio" value="#{condominiosController.selected.nomeCondominio}" title="#{bundle.CreateCondominiosTitle_nomeCondominio}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_endereco}" for="endereco" />
+                    <h:inputText id="endereco" value="#{condominiosController.selected.endereco}" title="#{bundle.CreateCondominiosTitle_endereco}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_contrato}" for="contrato" />
+                    <h:inputText id="contrato" value="#{condominiosController.selected.contrato}" title="#{bundle.CreateCondominiosTitle_contrato}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_qtdeElevadores}" for="qtdeElevadores" />
+                    <h:inputText id="qtdeElevadores" value="#{condominiosController.selected.qtdeElevadores}" title="#{bundle.CreateCondominiosTitle_qtdeElevadores}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_marcaElevadores}" for="marcaElevadores" />
+                    <h:inputText id="marcaElevadores" value="#{condominiosController.selected.marcaElevadores}" title="#{bundle.CreateCondominiosTitle_marcaElevadores}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_qtdeAndares}" for="qtdeAndares" />
+                    <h:inputText id="qtdeAndares" value="#{condominiosController.selected.qtdeAndares}" title="#{bundle.CreateCondominiosTitle_qtdeAndares}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_qtdeBlocos}" for="qtdeBlocos" />
+                    <h:inputText id="qtdeBlocos" value="#{condominiosController.selected.qtdeBlocos}" title="#{bundle.CreateCondominiosTitle_qtdeBlocos}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_nomeSindico}" for="nomeSindico" />
+                    <h:inputText id="nomeSindico" value="#{condominiosController.selected.nomeSindico}" title="#{bundle.CreateCondominiosTitle_nomeSindico}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_telSindico}" for="telSindico" />
+                    <h:inputText id="telSindico" value="#{condominiosController.selected.telSindico}" title="#{bundle.CreateCondominiosTitle_telSindico}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_emailSindico}" for="emailSindico" />
+                    <h:inputText id="emailSindico" value="#{condominiosController.selected.emailSindico}" title="#{bundle.CreateCondominiosTitle_emailSindico}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_nomeSubSindico}" for="nomeSubSindico" />
+                    <h:inputText id="nomeSubSindico" value="#{condominiosController.selected.nomeSubSindico}" title="#{bundle.CreateCondominiosTitle_nomeSubSindico}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_telSubSindico}" for="telSubSindico" />
+                    <h:inputText id="telSubSindico" value="#{condominiosController.selected.telSubSindico}" title="#{bundle.CreateCondominiosTitle_telSubSindico}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_emailSubSindico}" for="emailSubSindico" />
+                    <h:inputText id="emailSubSindico" value="#{condominiosController.selected.emailSubSindico}" title="#{bundle.CreateCondominiosTitle_emailSubSindico}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_imobiliaria}" for="imobiliaria" />
+                    <h:inputText id="imobiliaria" value="#{condominiosController.selected.imobiliaria}" title="#{bundle.CreateCondominiosTitle_imobiliaria}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_telImob}" for="telImob" />
+                    <h:inputText id="telImob" value="#{condominiosController.selected.telImob}" title="#{bundle.CreateCondominiosTitle_telImob}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_emailImob}" for="emailImob" />
+                    <h:inputText id="emailImob" value="#{condominiosController.selected.emailImob}" title="#{bundle.CreateCondominiosTitle_emailImob}" />
+                    <h:outputLabel value="#{bundle.CreateCondominiosLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{condominiosController.selected.id}" title="#{bundle.CreateCondominiosTitle_id}" />
+                </h:panelGrid>
+                <br />
+                <h:commandLink action="#{condominiosController.create}" value="#{bundle.CreateCondominiosSaveLink}" />
+                <br />
+                <br />
+                <h:commandLink action="#{condominiosController.prepareList}" value="#{bundle.CreateCondominiosShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.CreateCondominiosIndexLink}"/>
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>

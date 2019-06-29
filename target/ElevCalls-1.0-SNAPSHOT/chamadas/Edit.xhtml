@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:composition template="/template.xhtml">
+        <ui:define name="title">
+            <h:outputText value="#{bundle.EditChamadasTitle}"></h:outputText>
+        </ui:define>
+        <ui:define name="body">
+            <h:panelGroup id="messagePanel" layout="block">
+                <h:messages errorStyle="color: red" infoStyle="color: green" layout="table"/>
+            </h:panelGroup>
+            <h:form>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="#{bundle.EditChamadasLabel_condominios}" for="condominios" />
+                    <h:selectOneMenu id="condominios" value="#{chamadasController.selected.condominios}" title="#{bundle.EditChamadasTitle_condominios}" required="true" requiredMessage="#{bundle.EditChamadasRequiredMessage_condominios}">
+                        <f:selectItems value="#{condominiosController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditChamadasLabel_funcionarios}" for="funcionarios" />
+                    <h:selectOneMenu id="funcionarios" value="#{chamadasController.selected.funcionarios}" title="#{bundle.EditChamadasTitle_funcionarios}" required="true" requiredMessage="#{bundle.EditChamadasRequiredMessage_funcionarios}">
+                        <f:selectItems value="#{funcionariosController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditChamadasLabel_login}" for="login" />
+                    <h:selectOneMenu id="login" value="#{chamadasController.selected.login}" title="#{bundle.EditChamadasTitle_login}" required="true" requiredMessage="#{bundle.EditChamadasRequiredMessage_login}">
+                        <f:selectItems value="#{loginController.itemsAvailableSelectOne}"/>
+                    </h:selectOneMenu>
+                    <h:outputLabel value="#{bundle.EditChamadasLabel_horaChamada}" for="horaChamada" />
+                    <h:inputText id="horaChamada" value="#{chamadasController.selected.horaChamada}" title="#{bundle.EditChamadasTitle_horaChamada}" />
+                    <h:outputLabel value="#{bundle.EditChamadasLabel_horaEnvio}" for="horaEnvio" />
+                    <h:inputText id="horaEnvio" value="#{chamadasController.selected.horaEnvio}" title="#{bundle.EditChamadasTitle_horaEnvio}" />
+                    <h:outputLabel value="#{bundle.EditChamadasLabel_descricaoDefeito}" for="descricaoDefeito" />
+                    <h:inputText id="descricaoDefeito" value="#{chamadasController.selected.descricaoDefeito}" title="#{bundle.EditChamadasTitle_descricaoDefeito}" />
+                    <h:outputLabel value="#{bundle.EditChamadasLabel_nomeSolicitante}" for="nomeSolicitante" />
+                    <h:inputText id="nomeSolicitante" value="#{chamadasController.selected.nomeSolicitante}" title="#{bundle.EditChamadasTitle_nomeSolicitante}" />
+                    <h:outputLabel value="#{bundle.EditChamadasLabel_telSolicitante}" for="telSolicitante" />
+                    <h:inputText id="telSolicitante" value="#{chamadasController.selected.telSolicitante}" title="#{bundle.EditChamadasTitle_telSolicitante}" />
+                    <h:outputLabel value="#{bundle.EditChamadasLabel_id}" for="id" />
+                    <h:inputText id="id" value="#{chamadasController.selected.id}" title="#{bundle.EditChamadasTitle_id}" />
+                </h:panelGrid>
+                <h:commandLink action="#{chamadasController.update}" value="#{bundle.EditChamadasSaveLink}"/>
+                <br />
+                <br />
+                <h:link outcome="View" value="#{bundle.EditChamadasViewLink}"/>
+                <br />
+                <h:commandLink action="#{chamadasController.prepareList}" value="#{bundle.EditChamadasShowAllLink}" immediate="true"/>
+                <br />
+                <br />
+                <h:link outcome="/index" value="#{bundle.EditChamadasIndexLink}" />
+            </h:form>
+        </ui:define>
+    </ui:composition>
+
+</html>
